@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LXY</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<nav class="nav" id="nav">
+  <a class="nav-logo" href="#hero">L<span>XY</span></a>
+  <div class="nav-right">
+  <ul class="nav-links">
+    <li><a href="#about" data-i18n="nav.about">關於</a></li>
+    <li><a href="#experience" data-i18n="nav.experience">經歷</a></li>
+    <li><a href="#awards" data-i18n="nav.awards">獲獎</a></li>
+    <li><a href="#projects" data-i18n="nav.projects">專案</a></li>
+    <li><a href="#skills" data-i18n="nav.skills">技能</a></li>
+    <li><a href="https://status.ddns.ge/" target="_blank" rel="noopener" data-i18n="nav.status">服務狀態</a></li>
+    <li><a href="#contact" data-i18n="nav.contact">聯絡</a></li>
+  </ul>
+  <div class="nav-lang">
+    <button type="button" class="lang-btn" data-lang="zh" aria-label="繁體中文">中文</button>
+    <span class="lang-sep">/</span>
+    <button type="button" class="lang-btn" data-lang="en" aria-label="English">EN</button>
+  </div>
+  </div>
+</nav>
+
+<div class="page">
+
+  <section class="hero" id="hero">
+    <div>
+      <div class="hero-card">
+        <div class="hero-top">
+          <div class="avatar-wrap">
+            <div class="avatar">L</div>
+          </div>
+          <div class="hero-info">
+            <h1 class="name">LXY</h1>
+            <p class="title">Student</p>
+            <p class="bio">
+              <span id="typed"></span><span class="cursor"></span>
+            </p>
+          </div>
+        </div>
+
+        <div class="hero-skills">
+          <span class="skill" data-preview-key="skillPython" data-title="Python" data-desc="用 Python 寫各種小工具、自動化腳本、網頁爬蟲。" data-icon="🐍" data-tags="selenium,flask,script">Python</span>
+          <span class="skill" data-preview-key="skillWeb" data-title="Web Dev" data-desc="前端網頁開發，從設計到實作，打造好看的網站。" data-icon="🌐" data-tags="html,css,js">Web Dev</span>
+          <span class="skill" data-preview-key="skillPhoto" data-title="Photography" data-desc="喜歡用鏡頭捕捉生活中的瞬間，記錄美好畫面。" data-icon="📷" data-tags="street,portrait,landscape">Photography</span>
+          <span class="skill" data-preview-key="skillDesign" data-title="Design" data-desc="視覺設計、UI 介面、品牌識別，讓想法變成畫面。" data-icon="🎨" data-tags="figma,ui,branding">Design</span>
+          <span class="skill" data-preview-key="skillTranslation" data-title="Translation" data-desc="翻譯、在地化、繁體中文，讓使用繁體中文的人能更好的使用外國軟體。" data-icon="🌐" data-tags="translate,localization,traditional chinese">Translation</span>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="links">
+          <a class="link" href="mailto:contact@lxyo.cc.cd" data-link-preview="email-contact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span>contact@lxyo.cc.cd</span>
+          </a>
+          <a class="link" href="mailto:me@lxyo.cc.cd" data-link-preview="email-me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span>me@lxyo.cc.cd</span>
+          </a>
+          <a class="link" href="https://github.com/Yo-codeback" target="_blank" rel="noopener" data-link-preview="github">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </svg>
+            <span>GitHub</span>
+          </a>
+          <a class="link" href="https://status.ddns.ge/" target="_blank" rel="noopener" data-link-preview="status">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 12h18"/>
+              <path d="M12 3v18"/>
+              <path d="M16 7l-4 4-4-4"/>
+            </svg>
+            <span data-i18n="nav.status">服務狀態</span>
+          </a>
+        </div>
+      </div>
+
+      <a class="scroll-hint" href="#about">
+        <span data-i18n="hero.scroll">向下探索</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="6 9 12 15 18 9"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <section id="about" class="about-section">
+    <div class="section-inner reveal">
+      <div class="section-header">
+        <div class="section-label">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+          <span data-i18n="about.label">個人詳情 / ABOUT</span>
+        </div>
+        <h2 class="section-title" data-i18n="about.title">關於我</h2>
+      </div>
+
+      <div class="about-layout">
+        <div class="details-card">
+          <div class="details-grid">
+            <div class="detail-item">
+              <div class="detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div>
+                <div class="detail-label" data-i18n="about.birthplaceLabel">出生地</div>
+                <div class="detail-value" data-i18n="about.birthplace">台灣 台東</div>
+              </div>
+            </div>
+
+            <div class="detail-item">
+              <div class="detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div>
+                <div class="detail-label" data-i18n="about.residenceLabel">居住地</div>
+                <div class="detail-value" data-i18n="about.residence">台灣 南投</div>
+              </div>
+            </div>
+
+            <div class="detail-item">
+              <div class="detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <div>
+                <div class="detail-label" data-i18n="about.ageLabel">年齡</div>
+                <div class="detail-value"><span id="age"></span> <span data-i18n="about.ageSuffix">歲</span></div>
+              </div>
+            </div>
+
+            <div class="detail-item">
+              <div class="detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                </svg>
+              </div>
+              <div>
+                <div class="detail-label" data-i18n="about.educationLabel">目前就讀</div>
+                <div class="detail-value" data-i18n="about.education">高職/機械科</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="interests-block">
+            <div class="detail-label" data-i18n="about.interestsLabel">興趣與專長</div>
+            <div class="interest-tags">
+              <span class="interest-tag" data-i18n="about.interest.minecraft">麥塊</span>
+              <span class="interest-tag" data-i18n="about.interest.dev">開發</span>
+              <span class="interest-tag" data-i18n="about.interest.code">程式</span>
+              <span class="interest-tag" data-i18n="about.interest.hardware">硬體</span>
+              <span class="interest-tag" data-i18n="about.interest.computer">電腦</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="taiwan-map-card">
+          <div class="taiwan-map-inner">
+            <canvas id="taiwan-map-canvas"></canvas>
+            <div class="taiwan-map-markers" id="taiwan-map-markers"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="section-inner reveal">
+      <div class="section-header">
+        <div class="section-label">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+          </svg>
+          <span data-i18n="experience.label">經歷 / EXPERIENCE</span>
+        </div>
+        <h2 class="section-title" data-i18n="experience.title">工作與專案經歷</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date" data-i18n="experience.weatherDate">2026 — 至今</div>
+          <div class="timeline-title">Weather Master</div>
+          <div class="timeline-role" data-i18n="experience.weatherRole">開源貢獻 · 繁體中文化</div>
+          <div class="timeline-desc" data-i18n-html="experience.weatherDesc">
+            參與 <a href="https://github.com/PranshulGG/WeatherMaster" target="_blank" rel="noopener">Weather Master</a> 的繁體中文在地化，完成 1,338 條字串翻譯，約佔專案翻譯量的 20% 以上，讓台灣使用者也能用母語追蹤天氣。
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date" data-i18n="experience.sunriseDate">2025 — 至今</div>
+          <div class="timeline-title" data-i18n="experience.sunriseTitle">日出伺服器</div>
+          <div class="timeline-role" data-i18n="experience.sunriseRole">開發</div>
+          <div class="timeline-desc" data-i18n="experience.sunriseDesc">負責伺服器開發、功能建置與系統維護，持續優化玩家體驗。</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="awards">
+    <div class="section-inner reveal">
+      <div class="section-header">
+        <div class="section-label">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
+            <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
+            <path d="M4 22h16"/>
+            <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20 7 22"/>
+            <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20 17 22"/>
+            <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/>
+          </svg>
+          <span data-i18n="awards.label">獲獎 / AWARDS</span>
+        </div>
+        <h2 class="section-title" data-i18n="awards.title">獲獎紀錄</h2>
+      </div>
+
+      <div class="awards-grid">
+        <div class="award-card"
+          data-preview-key="award1"
+          data-title="智在家鄉 2024 第七屆"
+          data-org="聯發科技"
+          data-desc="智在家鄉比賽，2024 年，我們以「科技農業」為主題，製作了感測器等裝置蒐集農業資料，獲得優等獎。"
+          data-icon="🏆"
+          data-date="2024 年 11 月"
+          data-badge="優等獎"
+          data-tags="科技農業,感測器,聯發科技">
+          <div class="award-card-icon">🏆</div>
+          <div class="award-card-org">聯發科技</div>
+          <h3 class="award-card-title">智在家鄉 2024 第七屆</h3>
+          <p class="award-card-snippet">以「科技農業」為主題，製作感測器裝置蒐集農業資料。</p>
+          <div class="award-card-footer">
+            <span class="award-card-date">2024 年 11 月</span>
+            <span class="award-card-badge">優等獎</span>
+          </div>
+        </div>
+
+        <div class="award-card"
+          data-preview-key="award2"
+          data-title="南投縣 麥克松 2024 第一屆"
+          data-org="南投縣"
+          data-desc="開發體感健腦電子琴，廣受評審好評，南投縣教育處處長也親自體驗過。"
+          data-icon="🥇"
+          data-date="2024 年 5 月 30 日"
+          data-badge="特優"
+          data-tags="體感,電子琴,麥克松">
+          <div class="award-card-icon">🥇</div>
+          <div class="award-card-org">南投縣</div>
+          <h3 class="award-card-title">南投縣 麥克松 2024 第一屆</h3>
+          <p class="award-card-snippet">開發體感健腦電子琴，廣受評審好評。</p>
+          <div class="award-card-footer">
+            <span class="award-card-date">2024 年 5 月 30 日</span>
+            <span class="award-card-badge">特優</span>
+          </div>
+        </div>
+
+        <div class="award-card"
+          data-preview-key="award3"
+          data-title="Do your:bit 2024 台灣賽"
+          data-org="DO YOUR:BIT"
+          data-desc="開發體感健腦電子琴，獲得台灣區賽入選（名次未定義）。"
+          data-icon="⭐"
+          data-date="2024 年 12 月 31 日"
+          data-badge="優選"
+          data-tags="micro:bit,體感,國際賽">
+          <div class="award-card-icon">⭐</div>
+          <div class="award-card-org">DO YOUR:BIT</div>
+          <h3 class="award-card-title">Do your:bit 2024 台灣賽</h3>
+          <p class="award-card-snippet">體感健腦電子琴獲台灣區賽入選。</p>
+          <div class="award-card-footer">
+            <span class="award-card-date">2024 年 12 月 31 日</span>
+            <span class="award-card-badge">優選</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-inner reveal">
+      <div class="section-header">
+        <div class="section-label">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+          </svg>
+          <span data-i18n="projects.label">專案 / PROJECTS</span>
+        </div>
+        <h2 class="section-title" data-i18n="projects.title">作品與專案</h2>
+      </div>
+
+      <div class="projects-grid">
+        <a class="project-card"
+          href="https://github.com/PranshulGG/WeatherMaster"
+          target="_blank"
+          rel="noopener"
+          data-preview-key="projectWeather"
+          data-title="Weather Master"
+          data-desc="開源 Android 天氣 App，靈感來自 Google Pixel Weather，支援多種天氣來源與小工具。我負責繁體中文化，翻譯了 1,338 條字串，約佔專案翻譯量的 20% 以上。"
+          data-icon="🌦️"
+          data-url="github.com/PranshulGG/WeatherMaster"
+          data-tags="open source,android,i18n,繁體中文">
+          <div class="project-card-icon project-card-emoji">🌦️</div>
+          <h3 class="project-card-title">Weather Master</h3>
+          <p class="project-card-snippet" data-i18n="projects.weatherSnippet">開源 Android 天氣 App 繁體中文化貢獻者。</p>
+          <div class="project-stats">
+            <span class="project-stat"><strong>1,338</strong> <span data-i18n="projects.weatherStat1">條翻譯</span></span>
+            <span class="project-stat"><strong>20%+</strong> <span data-i18n="projects.weatherStat2">專案字串</span></span>
+          </div>
+          <span class="project-card-link">GitHub →</span>
+        </a>
+
+        <a class="project-card"
+          href="https://play.google.com/store/apps/details?id=com.bvc_dev_team.androidapp"
+          target="_blank"
+          rel="noopener"
+          data-preview-key="projectCrop"
+          data-title="農產分析"
+          data-desc="農產分析是一款專為農民和農業從業者設計的智慧工具，幫助您輕鬆掌握市場動態，做出明智的農業決策。透過即時的價格數據和智能分析，讓您的農產品獲得最佳收益。"
+          data-img="https://play-lh.googleusercontent.com/NTqjY2mbt0F2i7puMSiTOP4z76HeeBLNhnZv5H5CcK_nBi4d97qSdFFrD--aAHuuWnySbWFiatZBM2LRgfFG9I4=w480-h960"
+          data-url="play.google.com"
+          data-tags="android,農業,價格分析,開放資料">
+          <div class="project-card-icon">
+            <img src="https://play-lh.googleusercontent.com/NTqjY2mbt0F2i7puMSiTOP4z76HeeBLNhnZv5H5CcK_nBi4d97qSdFFrD--aAHuuWnySbWFiatZBM2LRgfFG9I4=w96-h96" alt="農產分析" width="48" height="48" loading="lazy">
+          </div>
+          <h3 class="project-card-title" data-i18n="projects.cropTitle">農產分析</h3>
+          <p class="project-card-snippet" data-i18n="projects.cropSnippet">全台作物價格分析工具，即時掌握市場行情。</p>
+          <span class="project-card-link">Google Play →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-inner reveal">
+      <div class="section-header">
+        <div class="section-label">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 18 22 12 16 6"/>
+            <polyline points="8 6 2 12 8 18"/>
+          </svg>
+          <span data-i18n="skills.label">技能 / SKILLS</span>
+        </div>
+        <h2 class="section-title" data-i18n="skills.title">專長領域</h2>
+      </div>
+
+      <div class="cards-grid">
+        <div class="info-card">
+          <div class="info-card-icon">🐍</div>
+          <h3>Python</h3>
+          <p data-i18n="skills.pythonDesc">用 Python 寫各種小工具、自動化腳本、網頁爬蟲與後端服務。</p>
+          <div class="info-card-tags">
+            <span class="info-card-tag">selenium</span>
+            <span class="info-card-tag">flask</span>
+            <span class="info-card-tag">script</span>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">🌐</div>
+          <h3>Web Dev</h3>
+          <p data-i18n="skills.webDesc">前端網頁開發，從設計到實作，打造好看又實用的網站。</p>
+          <div class="info-card-tags">
+            <span class="info-card-tag">html</span>
+            <span class="info-card-tag">css</span>
+            <span class="info-card-tag">js</span>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">📷</div>
+          <h3>Photography</h3>
+          <p data-i18n="skills.photoDesc">喜歡用鏡頭捕捉生活中的瞬間，記錄美好畫面。</p>
+          <div class="info-card-tags">
+            <span class="info-card-tag">street</span>
+            <span class="info-card-tag">portrait</span>
+            <span class="info-card-tag">landscape</span>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-icon">🎨</div>
+          <h3>Design</h3>
+          <p data-i18n="skills.designDesc">視覺設計、UI 介面、品牌識別，讓想法變成畫面。</p>
+          <div class="info-card-tags">
+            <span class="info-card-tag">figma</span>
+            <span class="info-card-tag">ui</span>
+            <span class="info-card-tag">branding</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact">
+    <div class="section-inner reveal">
+      <div class="section-header">
+        <div class="section-label">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+          <span data-i18n="contact.label">聯絡 / CONTACT</span>
+        </div>
+        <h2 class="section-title" data-i18n="contact.title">保持聯繫</h2>
+      </div>
+
+      <div class="contact-card">
+        <p data-i18n="contact.desc">有專案合作、技術交流或任何想法，歡迎透過以下管道找到我。</p>
+        <div class="contact-links">
+          <a class="link" href="mailto:contact@lxyo.cc.cd" data-link-preview="email-contact">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span>contact@lxyo.cc.cd</span>
+          </a>
+          <a class="link" href="mailto:me@lxyo.cc.cd" data-link-preview="email-me">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span>me@lxyo.cc.cd</span>
+          </a>
+          <a class="link" href="https://github.com/Yo-codeback" target="_blank" rel="noopener" data-link-preview="github">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </svg>
+            <span>GitHub</span>
+          </a>
+          <a class="link" href="https://status.ddns.ge/" target="_blank" rel="noopener" data-link-preview="status">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 12h18"/>
+              <path d="M12 3v18"/>
+              <path d="M16 7l-4 4-4-4"/>
+            </svg>
+            <span data-i18n="nav.status">服務狀態</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="footer">© <span id="year"></span> LXY</footer>
+
+<div class="preview" id="preview"></div>
+
+<script src="js/i18n.js"></script>
+<script src="js/age.js"></script>
+<script src="js/nav.js"></script>
+<script src="js/reveal.js"></script>
+<script src="js/taiwan-map.js"></script>
+<script src="js/cursor.js"></script>
+<script src="js/typewriter.js"></script>
+<script src="js/preview.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"75124c326cb447fe934cde04713ae013","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

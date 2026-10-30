@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>LXY</title>
+<meta name="description" content="LXY — 來自台灣的學生、開發者與數位創作者。">
+<meta name="author" content="LXY">
+<meta name="theme-color" content="#121110">
+<link rel="canonical" href="https://lxyo.cc.cd/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LXY">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:url" content="https://lxyo.cc.cd/">
+<meta property="og:title" content="LXY">
+<meta property="og:description" content="LXY — 來自台灣的學生、開發者與數位創作者。">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="LXY">
+<meta name="twitter:description" content="LXY — 來自台灣的學生、開發者與數位創作者。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect x='4' y='4' width='56' height='56' rx='14' fill='%23e2571e'/%3E%3Ctext x='32' y='44' text-anchor='middle' font-family='Georgia,serif' font-weight='900' font-size='34' fill='%23fbf8f2'%3EL%3C/text%3E%3C/svg%3E">
+<script>document.documentElement.classList.replace('no-js', 'js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..900&family=IBM+Plex+Mono:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@700;900&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="intro">
+
+<!-- 入口：封面卡（點擊或按 Enter 開始） -->
+<div id="gate" role="dialog" aria-modal="true" aria-label="intro">
+  <p class="gate-top">LXY · 個人介紹</p>
+  <div class="cover-card" id="ticket" role="button" tabindex="0" aria-label="開始查看 Enter">
+    <div class="cc-main">
+      <div class="cc-head"><b>個人介紹</b><span>Portfolio</span></div>
+      <div class="cc-name">LXY<i>.</i></div>
+      <div class="cc-meta"><span id="tDate">—</span><span>7 chapters</span></div>
+    </div>
+    <div class="cc-go">
+      <b>開始</b><small>ENTER</small>
+      <span class="arr" aria-hidden="true"><svg class="ln-ic" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </div>
+  </div>
+  <p class="gate-hint">點擊開始查看 · <kbd>Enter ↵</kbd></p>
+</div>
+
+<!-- 左側章節（桌機） -->
+<nav class="rail" aria-label="chapters">
+  <a class="rail-brand" href="#start">LXY<i>.</i></a>
+  <div class="rail-line" aria-hidden="true"></div>
+  <ol class="rail-stops" id="railStops"></ol>
+  <div class="rail-foot">
+    <div class="lang">
+      <button type="button" class="lang-btn" data-lang="zh" aria-label="繁體中文">中文</button>
+      <span class="lang-sep">/</span>
+      <button type="button" class="lang-btn" data-lang="en" aria-label="English">EN</button>
+    </div>
+    <span class="rail-clock">TPE <span id="clock">--:--</span></span>
+  </div>
+</nav>
+
+<!-- 上方進度（手機） -->
+<div class="topbar" aria-hidden="true">
+  <a class="rail-brand" href="#start">LXY<i>.</i></a>
+  <span class="topbar-cur" id="topCur"></span>
+  <div class="lang">
+    <button type="button" class="lang-btn" data-lang="zh">中</button>
+    <button type="button" class="lang-btn" data-lang="en">EN</button>
+  </div>
+  <i class="topbar-bar"></i>
+</div>
+
+<main>
+
+  <!-- 01 首頁 -->
+  <section class="station" id="start" data-station data-key="nav.start" data-zh="首頁" data-en="Home">
+    <div class="inner">
+      <div class="hero">
+        <div>
+          <p class="kicker reveal">Hello · 你好</p>
+          <h1 class="name reveal" style="--d:.05s">LXY<i>.</i></h1>
+          <p class="role reveal" style="--d:.15s" data-i18n="hero.role">學生 · 開發者 · 數位創作者</p>
+          <p class="bio reveal" style="--d:.2s"><span id="typed"></span><span class="pen" aria-hidden="true"></span></p>
+          <dl class="facts reveal" style="--d:.3s">
+            <div><dt data-i18n="about.birthplaceLabel">出生地</dt><dd data-i18n="about.birthplace">台灣 台東</dd></div>
+            <div><dt data-i18n="about.residenceLabel">居住地</dt><dd data-i18n="about.residence">台灣 南投</dd></div>
+            <div><dt data-i18n="about.ageLabel">年齡</dt><dd><span data-age></span> <span data-i18n="about.ageSuffix">歲</span></dd></div>
+          </dl>
+        </div>
+      </div>
+      <button type="button" class="next reveal" style="--d:.5s" data-next></button>
+    </div>
+  </section>
+
+  <!-- 02 關於 -->
+  <section class="station" id="about" data-station data-key="nav.about" data-zh="關於" data-en="About">
+    <div class="inner">
+      <div class="sign reveal" data-sign></div>
+      <div class="about">
+        <article class="panel reveal" style="--d:.1s">
+          <div class="panel-head"><span data-i18n="about.label">個人詳情 / ABOUT</span><b>No. 0805</b></div>
+          <div class="fields">
+            <div class="field"><span class="ic"><svg class="ln-ic" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <span class="k" data-i18n="about.birthplaceLabel">出生地</span><span class="v" data-i18n="about.birthplace">台灣 台東</span></div>
+            <div class="field"><span class="ic"><svg class="ln-ic" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V21H3z"/><path d="M9 21v-6h6v6"/></svg></span>
+              <span class="k" data-i18n="about.residenceLabel">居住地</span><span class="v" data-i18n="about.residence">台灣 南投</span></div>
+            <div class="field"><span class="ic"><svg class="ln-ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+              <span class="k" data-i18n="about.ageLabel">年齡</span><span class="v"><span id="age" data-age></span> <span data-i18n="about.ageSuffix">歲</span></span></div>
+            <div class="field"><span class="ic"><svg class="ln-ic" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></span>
+              <span class="k" data-i18n="about.educationLabel">目前就讀</span><span class="v" data-i18n="about.education">高職/機械科</span></div>
+            <div class="likes">
+              <span class="k" data-i18n="about.interestsLabel">興趣與專長</span>
+              <div class="chips">
+                <span class="chip" data-i18n="about.interest.minecraft">麥塊</span>
+                <span class="chip" data-i18n="about.interest.dev">開發</span>
+                <span class="chip" data-i18n="about.interest.code">程式</span>
+                <span class="chip" data-i18n="about.interest.hardware">硬體</span>
+                <span class="chip" data-i18n="about.interest.computer">電腦</span>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="panel mapbox reveal" style="--d:.2s">
+          <div class="panel-head"><span>Map</span><b>台東 · 南投</b></div>
+          <div class="taiwan-map-inner">
+            <canvas id="taiwan-map-canvas" aria-hidden="true"></canvas>
+            <div class="taiwan-map-markers" id="taiwan-map-markers"></div>
+          </div>
+        </article>
+      </div>
+      <button type="button" class="next reveal" data-next></button>
+    </div>
+  </section>
+
+  <!-- 03 經歷 -->
+  <section class="station" id="experience" data-station data-key="nav.experience" data-zh="經歷" data-en="Experience">
+    <div class="inner">
+      <div class="sign reveal" data-sign></div>
+      <div class="timetable">
+        <div class="tt-row reveal" style="--d:.1s">
+          <div class="tt-time" data-i18n="experience.weatherDate">2026 — 至今</div>
+          <div class="tt-track" aria-hidden="true"></div>
+          <article class="tt-card">
+            <h3>Weather Master</h3>
+            <div class="tt-role" data-i18n="experience.weatherRole">開源貢獻 · 繁體中文化</div>
+            <div class="tt-desc" data-i18n-html="experience.weatherDesc">參與 <a href="https://github.com/PranshulGG/WeatherMaster" target="_blank" rel="noopener">Weather Master</a> 的繁體中文在地化，完成 1,338 條字串翻譯，約佔專案翻譯量的 20% 以上，讓台灣使用者也能用母語追蹤天氣。</div>
+          </article>
+        </div>
+        <div class="tt-row reveal" style="--d:.2s">
+          <div class="tt-time" data-i18n="experience.sunriseDate">2025 — 至今</div>
+          <div class="tt-track" aria-hidden="true"></div>
+          <article class="tt-card">
+            <h3 data-i18n="experience.sunriseTitle">日出伺服器</h3>
+            <div class="tt-role" data-i18n="experience.sunriseRole">開發</div>
+            <div class="tt-desc" data-i18n="experience.sunriseDesc">負責伺服器開發、功能建置與系統維護，持續優化玩家體驗。</div>
+          </article>
+        </div>
+      </div>
+      <button type="button" class="next reveal" data-next></button>
+    </div>
+  </section>
+
+  <!-- 04 獲獎 -->
+  <section class="station" id="awards" data-station data-key="nav.awards" data-zh="獲獎" data-en="Awards">
+    <div class="inner">
+      <div class="sign reveal" data-sign></div>
+      <div class="grid grid--3">
+        <button type="button" class="card award-card reveal" style="--d:.05s" data-card
+          data-preview-key="award1" data-title="智在家鄉 2024 第七屆" data-org="聯發科技"
+          data-desc="智在家鄉比賽，2024 年，我們以「科技農業」為主題，製作了感測器等裝置蒐集農業資料，獲得優等獎。"
+          data-logo="data/mediatek.png" data-date="2024 年 11 月" data-badge="優等獎" data-tags="科技農業,感測器,聯發科技">
+          <span class="cover"><img src="data/mediatek.png" alt="MediaTek" loading="lazy"></span>
+          <span class="stamp"><span class="award-card-badge">優等獎</span></span>
+          <span class="card-body">
+            <span class="card-org award-card-org">聯發科技</span>
+            <span class="card-title award-card-title">智在家鄉 2024 第七屆</span>
+            <span class="card-snip award-card-snippet">以「科技農業」為主題，製作感測器裝置蒐集農業資料。</span>
+            <span class="card-foot"><span class="award-card-date">2024 年 11 月</span><span class="more" aria-hidden="true">→</span></span>
+          </span>
+        </button>
+        <button type="button" class="card award-card reveal" style="--d:.12s" data-card
+          data-preview-key="award2" data-title="南投縣 麥克松 2024 第一屆" data-org="南投縣"
+          data-desc="開發體感健腦電子琴，廣受評審好評，南投縣教育處處長也親自體驗過。"
+          data-logo="data/nantou.png" data-date="2024 年 5 月 30 日" data-badge="特優" data-tags="體感,電子琴,麥克松">
+          <span class="cover"><img class="square" src="data/nantou.png" alt="南投縣" loading="lazy"></span>
+          <span class="stamp"><span class="award-card-badge">特優</span></span>
+          <span class="card-body">
+            <span class="card-org award-card-org">南投縣</span>
+            <span class="card-title award-card-title">南投縣 麥克松 2024 第一屆</span>
+            <span class="card-snip award-card-snippet">開發體感健腦電子琴，廣受評審好評。</span>
+            <span class="card-foot"><span class="award-card-date">2024 年 5 月 30 日</span><span class="more" aria-hidden="true">→</span></span>
+          </span>
+        </button>
+        <button type="button" class="card award-card reveal" style="--d:.19s" data-card
+          data-preview-key="award3" data-title="Do your:bit 2024 台灣賽" data-org="DO YOUR:BIT"
+          data-desc="開發體感健腦電子琴，獲得台灣區賽入選（名次未定義）。"
+          data-logo="data/do_your_bit.png" data-date="2024 年 12 月 31 日" data-badge="優選" data-tags="micro:bit,體感,國際賽">
+          <span class="cover"><img src="data/do_your_bit.png" alt="do your:bit" loading="lazy"></span>
+          <span class="stamp"><span class="award-card-badge">優選</span></span>
+          <span class="card-body">
+            <span class="card-org award-card-org">DO YOUR:BIT</span>
+            <span class="card-title award-card-title">Do your:bit 2024 台灣賽</span>
+            <span class="card-snip award-card-snippet">體感健腦電子琴獲台灣區賽入選。</span>
+            <span class="card-foot"><span class="award-card-date">2024 年 12 月 31 日</span><span class="more" aria-hidden="true">→</span></span>
+          </span>
+        </button>
+      </div>
+      <button type="button" class="next reveal" data-next></button>
+    </div>
+  </section>
+
+  <!-- 05 專案 -->
+  <section class="station" id="projects" data-station data-key="nav.projects" data-zh="專案" data-en="Projects">
+    <div class="inner">
+      <div class="sign reveal" data-sign></div>
+      <div class="grid grid--2">
+        <button type="button" class="card reveal" style="--d:.05s" data-card
+          data-preview-key="projectWeather" data-title="Weather Master" data-org="Open source · Android"
+          data-desc="開源 Android 天氣 App，靈感來自 Google Pixel Weather，支援多種天氣來源與小工具。我負責繁體中文化，翻譯了 1,338 條字串，約佔專案翻譯量的 20% 以上。"
+          data-logo="data/weather_master.png" data-cover="weather" data-url="play.google.com" data-href="https://play.google.com/store/apps/details?id=com.pranshulgg.weather_master"
+          data-tags="open source,android,i18n,繁體中文">
+          <span class="cover cover--weather"><img class="square" src="data/weather_master.png" alt="Weather Master" loading="lazy"></span>
+          <span class="card-body">
+            <span class="card-org">Open source · Android</span>
+            <span class="card-title">Weather Master</span>
+            <span class="card-snip project-card-snippet" data-i18n="projects.weatherSnippet">開源 Android 天氣 App 繁體中文化貢獻者。</span>
+            <span class="stats"><span><strong>1,338</strong><span data-i18n="projects.weatherStat1">條翻譯</span></span><span><strong>20%+</strong><span data-i18n="projects.weatherStat2">專案字串</span></span></span>
+            <span class="card-foot"><span>Google Play</span><span class="more" aria-hidden="true">→</span></span>
+          </span>
+        </button>
+        <button type="button" class="card reveal" style="--d:.12s" data-card
+          data-preview-key="projectCrop" data-title="農產分析" data-org="Google Play · Android"
+          data-desc="農產分析是一款專為農民和農業從業者設計的智慧工具，幫助您輕鬆掌握市場動態，做出明智的農業決策。透過即時的價格數據和智能分析，讓您的農產品獲得最佳收益。"
+          data-logo="https://play-lh.googleusercontent.com/NTqjY2mbt0F2i7puMSiTOP4z76HeeBLNhnZv5H5CcK_nBi4d97qSdFFrD--aAHuuWnySbWFiatZBM2LRgfFG9I4=w480-h960"
+          data-cover="crop" data-url="play.google.com" data-href="https://play.google.com/store/apps/details?id=com.bvc_dev_team.androidapp"
+          data-tags="android,農業,價格分析,開放資料">
+          <span class="cover cover--crop"><img class="square" src="https://play-lh.googleusercontent.com/NTqjY2mbt0F2i7puMSiTOP4z76HeeBLNhnZv5H5CcK_nBi4d97qSdFFrD--aAHuuWnySbWFiatZBM2LRgfFG9I4=w480-h960" alt="" loading="lazy" referrerpolicy="no-referrer"></span>
+          <span class="card-body">
+            <span class="card-org">Google Play · Android</span>
+            <span class="card-title" data-i18n="projects.cropTitle">農產分析</span>
+            <span class="card-snip project-card-snippet" data-i18n="projects.cropSnippet">全台作物價格分析工具，即時掌握市場行情。</span>
+            <span class="card-foot"><span>Google Play</span><span class="more" aria-hidden="true">→</span></span>
+          </span>
+        </button>
+      </div>
+      <button type="button" class="next reveal" data-next></button>
+    </div>
+  </section>
+
+  <!-- 06 技能 -->
+  <section class="station" id="skills" data-station data-key="nav.skills" data-zh="技能" data-en="Skills">
+    <div class="inner">
+      <div class="sign reveal" data-sign></div>
+      <div class="tags-grid">
+        <article class="ltag reveal" style="--d:.05s"><span class="emo" aria-hidden="true">🐍</span><h3>Python</h3>
+          <p data-i18n="skills.pythonDesc">用 Python 寫各種小工具、自動化腳本、網頁爬蟲與後端服務。</p>
+          <div class="tags"><span class="tag">selenium</span><span class="tag">flask</span><span class="tag">script</span></div></article>
+        <article class="ltag reveal" style="--d:.1s"><span class="emo" aria-hidden="true">🌐</span><h3>Web Dev</h3>
+          <p data-i18n="skills.webDesc">前端網頁開發，從設計到實作，打造好看又實用的網站。</p>
+          <div class="tags"><span class="tag">html</span><span class="tag">css</span><span class="tag">js</span></div></article>
+        <article class="ltag reveal" style="--d:.15s"><span class="emo" aria-hidden="true">🈶</span><h3>Translation</h3>
+          <p data-i18n="skills.translationDesc">翻譯、在地化、繁體中文，讓使用繁體中文的人能更好的使用外國軟體。</p>
+          <div class="tags"><span class="tag">translate</span><span class="tag">localization</span><span class="tag">zh-TW</span></div></article>
+        <article class="ltag reveal" style="--d:.2s"><span class="emo" aria-hidden="true">🎨</span><h3>Design</h3>
+          <p data-i18n="skills.designDesc">視覺設計、UI 介面、品牌識別，讓想法變成畫面。</p>
+          <div class="tags"><span class="tag">figma</span><span class="tag">ui</span><span class="tag">branding</span></div></article>
+        <article class="ltag reveal" style="--d:.25s"><span class="emo" aria-hidden="true">📷</span><h3>Photography</h3>
+          <p data-i18n="skills.photoDesc">喜歡用鏡頭捕捉生活中的瞬間，記錄美好畫面。</p>
+          <div class="tags"><span class="tag">street</span><span class="tag">portrait</span><span class="tag">landscape</span></div></article>
+      </div>
+      <button type="button" class="next reveal" data-next></button>
+    </div>
+  </section>
+
+  <!-- 07 聯絡 -->
+  <section class="station" id="contact" data-station data-key="nav.contact" data-zh="聯絡" data-en="Contact">
+    <div class="inner">
+      <div class="sign reveal" data-sign></div>
+      <p class="contact-desc reveal" data-i18n="contact.desc">有專案合作、技術交流或任何想法，歡迎透過以下管道找到我。</p>
+      <ul class="contacts reveal" style="--d:.1s">
+        <li><a href="mailto:contact@lxyo.cc.cd"><small>Email</small><b>contact@lxyo.cc.cd</b><span class="go" aria-hidden="true">→</span></a></li>
+        <li><a href="mailto:me@lxyo.cc.cd"><small>Email</small><b>me@lxyo.cc.cd</b><span class="go" aria-hidden="true">→</span></a></li>
+        <li><a href="https://github.com/Yo-codeback" target="_blank" rel="noopener"><small>GitHub</small><b>Yo-codeback</b><span class="go" aria-hidden="true">→</span></a></li>
+        <li><a href="https://status.ddns.ge/" target="_blank" rel="noopener"><small>Status</small><b data-i18n="nav.status">服務狀態</b><span class="go" aria-hidden="true">→</span></a></li>
+      </ul>
+      <div class="farewell reveal" style="--d:.2s">
+        <div>
+          <h3 data-i18n="ui.thanks">感謝您的觀看</h3>
+          <p data-i18n="ui.thanksSub">祝您有美好的一天</p>
+        </div>
+        <button type="button" class="back" id="backStart">
+          <svg class="ln-ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+          <span data-i18n="ui.back">回到頂部</span></button>
+      </div>
+      <p class="foot">© <span data-year>2026</span> LXY</p>
+    </div>
+  </section>
+</main>
+
+<!-- 詳情抽屜 -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer-bd" id="drawerBd"></div>
+  <div class="drawer-win" role="dialog" aria-modal="true" aria-labelledby="drawerTitle">
+    <div class="drawer-top"><span id="drawerKind">detail</span>
+      <button type="button" class="drawer-x" id="drawerX" aria-label="close"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M1 1l10 10M11 1 1 11" stroke="currentColor" stroke-width="1.6"/></svg></button></div>
+    <div id="drawerContent"></div>
+  </div>
+</div>
+
+<script src="js/i18n.js"></script>
+<script src="js/age.js"></script>
+<script src="js/taiwan-map.js"></script>
+<script src="js/app.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"75124c326cb447fe934cde04713ae013","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</body>
+</html>

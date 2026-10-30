@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<i18n>
+  <strings>
+    <string key="nav.about">
+      <zh>關於</zh>
+      <en>About</en>
+    </string>
+    <string key="nav.experience">
+      <zh>經歷</zh>
+      <en>Experience</en>
+    </string>
+    <string key="nav.awards">
+      <zh>獲獎</zh>
+      <en>Awards</en>
+    </string>
+    <string key="nav.projects">
+      <zh>專案</zh>
+      <en>Projects</en>
+    </string>
+    <string key="nav.skills">
+      <zh>技能</zh>
+      <en>Skills</en>
+    </string>
+    <string key="nav.status">
+      <zh>服務狀態</zh>
+      <en>Status</en>
+    </string>
+    <string key="nav.contact">
+      <zh>聯絡</zh>
+      <en>Contact</en>
+    </string>
+    <string key="hero.bio">
+      <zh>你好，我是一名高中生，熱愛程式開發與數位創作。</zh>
+      <en>Hi, I'm a high school student passionate about coding and digital creation.</en>
+    </string>
+    <string key="hero.scroll">
+      <zh>向下探索</zh>
+      <en>Scroll down</en>
+    </string>
+    <string key="about.label">
+      <zh>個人詳情 / ABOUT</zh>
+      <en>ABOUT</en>
+    </string>
+    <string key="about.title">
+      <zh>關於我</zh>
+      <en>About Me</en>
+    </string>
+    <string key="about.birthplaceLabel">
+      <zh>出生地</zh>
+      <en>Birthplace</en>
+    </string>
+    <string key="about.birthplace">
+      <zh>台灣 台東</zh>
+      <en>Taitung, Taiwan</en>
+    </string>
+    <string key="about.residenceLabel">
+      <zh>居住地</zh>
+      <en>Residence</en>
+    </string>
+    <string key="about.residence">
+      <zh>台灣 南投</zh>
+      <en>Nantou, Taiwan</en>
+    </string>
+    <string key="about.ageLabel">
+      <zh>年齡</zh>
+      <en>Age</en>
+    </string>
+    <string key="about.ageSuffix">
+      <zh>歲</zh>
+      <en>years old</en>
+    </string>
+    <string key="about.educationLabel">
+      <zh>目前就讀</zh>
+      <en>Education</en>
+    </string>
+    <string key="about.education">
+      <zh>高職/機械科</zh>
+      <en>Vocational HS · Mechanical Engineering</en>
+    </string>
+    <string key="about.interestsLabel">
+      <zh>興趣與專長</zh>
+      <en>Interests &amp; Skills</en>
+    </string>
+    <string key="about.interest.minecraft">
+      <zh>麥塊</zh>
+      <en>Minecraft</en>
+    </string>
+    <string key="about.interest.dev">
+      <zh>開發</zh>
+      <en>Development</en>
+    </string>
+    <string key="about.interest.code">
+      <zh>程式</zh>
+      <en>Programming</en>
+    </string>
+    <string key="about.interest.hardware">
+      <zh>硬體</zh>
+      <en>Hardware</en>
+    </string>
+    <string key="about.interest.computer">
+      <zh>電腦</zh>
+      <en>Computers</en>
+    </string>
+    <string key="experience.label">
+      <zh>經歷 / EXPERIENCE</zh>
+      <en>EXPERIENCE</en>
+    </string>
+    <string key="experience.title">
+      <zh>工作與專案經歷</zh>
+      <en>Work &amp; Project Experience</en>
+    </string>
+    <string key="experience.weatherDate">
+      <zh>2026 — 至今</zh>
+      <en>2026 — Present</en>
+    </string>
+    <string key="experience.weatherRole">
+      <zh>開源貢獻 · 繁體中文化</zh>
+      <en>Open Source · Traditional Chinese Localization</en>
+    </string>
+    <string key="experience.weatherDesc" html="true">
+      <zh><![CDATA[參與 <a href="https://github.com/PranshulGG/WeatherMaster" target="_blank" rel="noopener">Weather Master</a> 的繁體中文在地化，完成 1,338 條字串翻譯，約佔專案翻譯量的 20% 以上，讓台灣使用者也能用母語追蹤天氣。]]></zh>
+      <en><![CDATA[Contributed Traditional Chinese localization to <a href="https://github.com/PranshulGG/WeatherMaster" target="_blank" rel="noopener">Weather Master</a>—1,338 translated strings, over 20% of the project's translation volume—so users in Taiwan can track weather in their native language.]]></en>
+    </string>
+    <string key="experience.sunriseDate">
+      <zh>2025 — 至今</zh>
+      <en>2025 — Present</en>
+    </string>
+    <string key="experience.sunriseTitle">
+      <zh>日出伺服器</zh>
+      <en>Sunrise Server</en>
+    </string>
+    <string key="experience.sunriseRole">
+      <zh>開發</zh>
+      <en>Development</en>
+    </string>
+    <string key="experience.sunriseDesc">
+      <zh>負責伺服器開發、功能建置與系統維護，持續優化玩家體驗。</zh>
+      <en>Server development, feature building, and system maintenance—continuously improving the player experience.</en>
+    </string>
+    <string key="awards.label">
+      <zh>獲獎 / AWARDS</zh>
+      <en>AWARDS</en>
+    </string>
+    <string key="awards.title">
+      <zh>獲獎紀錄</zh>
+      <en>Awards</en>
+    </string>
+    <string key="projects.label">
+      <zh>專案 / PROJECTS</zh>
+      <en>PROJECTS</en>
+    </string>
+    <string key="projects.title">
+      <zh>作品與專案</zh>
+      <en>Projects &amp; Works</en>
+    </string>
+    <string key="projects.weatherSnippet">
+      <zh>開源 Android 天氣 App 繁體中文化貢獻者。</zh>
+      <en>Traditional Chinese localization contributor for an open-source Android weather app.</en>
+    </string>
+    <string key="projects.weatherStat1">
+      <zh>條翻譯</zh>
+      <en>translations</en>
+    </string>
+    <string key="projects.weatherStat2">
+      <zh>專案字串</zh>
+      <en>of project strings</en>
+    </string>
+    <string key="projects.cropTitle">
+      <zh>農產分析</zh>
+      <en>Crop Price Analysis</en>
+    </string>
+    <string key="projects.cropSnippet">
+      <zh>全台作物價格分析工具，即時掌握市場行情。</zh>
+      <en>Nationwide crop price analysis tool for real-time market insights.</en>
+    </string>
+    <string key="skills.label">
+      <zh>技能 / SKILLS</zh>
+      <en>SKILLS</en>
+    </string>
+    <string key="skills.title">
+      <zh>專長領域</zh>
+      <en>Areas of Expertise</en>
+    </string>
+    <string key="skills.pythonDesc">
+      <zh>用 Python 寫各種小工具、自動化腳本、網頁爬蟲與後端服務。</zh>
+      <en>Building small tools, automation scripts, web scrapers, and backend services with Python.</en>
+    </string>
+    <string key="skills.webDesc">
+      <zh>前端網頁開發，從設計到實作，打造好看又實用的網站。</zh>
+      <en>Front-end web development—from design to implementation, building beautiful and practical websites.</en>
+    </string>
+    <string key="skills.photoDesc">
+      <zh>喜歡用鏡頭捕捉生活中的瞬間，記錄美好畫面。</zh>
+      <en>Capturing moments through the lens and preserving beautiful scenes.</en>
+    </string>
+    <string key="skills.designDesc">
+      <zh>視覺設計、UI 介面、品牌識別，讓想法變成畫面。</zh>
+      <en>Visual design, UI, and branding—turning ideas into visuals.</en>
+    </string>
+    <string key="contact.label">
+      <zh>聯絡 / CONTACT</zh>
+      <en>CONTACT</en>
+    </string>
+    <string key="contact.title">
+      <zh>保持聯繫</zh>
+      <en>Get in Touch</en>
+    </string>
+    <string key="contact.desc">
+      <zh>有專案合作、技術交流或任何想法，歡迎透過以下管道找到我。</zh>
+      <en>For collaborations, tech discussions, or any ideas—reach out through the channels below.</en>
+    </string>
+    <string key="map.birth">
+      <zh>台東 · 出生地</zh>
+      <en>Taitung · Birthplace</en>
+    </string>
+    <string key="map.home">
+      <zh>南投 · 居住地</zh>
+      <en>Nantou · Residence</en>
+    </string>
+  </strings>
+
+  <previews>
+    <preview key="skillPython">
+      <zh>
+        <desc>用 Python 寫各種小工具、自動化腳本、網頁爬蟲。</desc>
+        <tags>selenium,flask,script</tags>
+      </zh>
+      <en>
+        <desc>Building small tools, automation scripts, and web scrapers with Python.</desc>
+        <tags>selenium,flask,script</tags>
+      </en>
+    </preview>
+    <preview key="skillWeb">
+      <zh>
+        <desc>前端網頁開發，從設計到實作，打造好看的網站。</desc>
+        <tags>html,css,js</tags>
+      </zh>
+      <en>
+        <desc>Front-end web development—from design to implementation, building beautiful websites.</desc>
+        <tags>html,css,js</tags>
+      </en>
+    </preview>
+    <preview key="skillPhoto">
+      <zh>
+        <desc>喜歡用鏡頭捕捉生活中的瞬間，記錄美好畫面。</desc>
+        <tags>street,portrait,landscape</tags>
+      </zh>
+      <en>
+        <desc>Capturing moments through the lens and preserving beautiful scenes.</desc>
+        <tags>street,portrait,landscape</tags>
+      </en>
+    </preview>
+    <preview key="skillDesign">
+      <zh>
+        <desc>視覺設計、UI 介面、品牌識別，讓想法變成畫面。</desc>
+        <tags>figma,ui,branding</tags>
+      </zh>
+      <en>
+        <desc>Visual design, UI, and branding—turning ideas into visuals.</desc>
+        <tags>figma,ui,branding</tags>
+      </en>
+    </preview>
+    <preview key="skillTranslation">
+      <zh>
+        <desc>翻譯、在地化、繁體中文，讓使用繁體中文的人能更好的使用外國軟體。</desc>
+        <tags>translate,localization,traditional chinese</tags>
+      </zh>
+      <en>
+        <desc>Translation and localization into Traditional Chinese, helping users enjoy foreign software in their native language.</desc>
+        <tags>translate,localization,traditional chinese</tags>
+      </en>
+    </preview>
+    <preview key="award1">
+      <zh>
+        <title>智在家鄉 2024 第七屆</title>
+        <org>聯發科技</org>
+        <desc>智在家鄉比賽，2024 年，我們以「科技農業」為主題，製作了感測器等裝置蒐集農業資料，獲得優等獎。</desc>
+        <date>2024 年 11 月</date>
+        <badge>優等獎</badge>
+        <snippet>以「科技農業」為主題，製作感測器裝置蒐集農業資料。</snippet>
+        <tags>科技農業,感測器,聯發科技</tags>
+      </zh>
+      <en>
+        <title>Smart Hometown 2024 (7th)</title>
+        <org>MediaTek</org>
+        <desc>At the 2024 Smart Hometown competition, our team built sensor devices to collect agricultural data under the theme "Tech Agriculture," winning an Excellence Award.</desc>
+        <date>November 2024</date>
+        <badge>Excellence</badge>
+        <snippet>Built sensor devices to collect agricultural data under the "Tech Agriculture" theme.</snippet>
+        <tags>agritech,sensors,MediaTek</tags>
+      </en>
+    </preview>
+    <preview key="award2">
+      <zh>
+        <title>南投縣 麥克松 2024 第一屆</title>
+        <org>南投縣</org>
+        <desc>開發體感健腦電子琴，廣受評審好評，南投縣教育處處長也親自體驗過。</desc>
+        <date>2024 年 5 月 30 日</date>
+        <badge>特優</badge>
+        <snippet>開發體感健腦電子琴，廣受評審好評。</snippet>
+        <tags>體感,電子琴,麥克松</tags>
+      </zh>
+      <en>
+        <title>Nantou County Makerathon 2024 (1st)</title>
+        <org>Nantou County</org>
+        <desc>Developed a motion-sensing brain-training electronic keyboard, praised by judges—the Nantou County Education Director tried it in person.</desc>
+        <date>May 30, 2024</date>
+        <badge>Grand Prize</badge>
+        <snippet>Developed a motion-sensing brain-training electronic keyboard, praised by judges.</snippet>
+        <tags>motion sensing,keyboard,makerathon</tags>
+      </en>
+    </preview>
+    <preview key="award3">
+      <zh>
+        <title>Do your:bit 2024 台灣賽</title>
+        <org>DO YOUR:BIT</org>
+        <desc>開發體感健腦電子琴，獲得台灣區賽入選（名次未定義）。</desc>
+        <date>2024 年 12 月 31 日</date>
+        <badge>優選</badge>
+        <snippet>體感健腦電子琴獲台灣區賽入選。</snippet>
+        <tags>micro:bit,體感,國際賽</tags>
+      </zh>
+      <en>
+        <title>do your:bit 2024 Taiwan</title>
+        <org>DO YOUR:BIT</org>
+        <desc>Developed a motion-sensing brain-training electronic keyboard, selected for the Taiwan regional competition.</desc>
+        <date>December 31, 2024</date>
+        <badge>Selected</badge>
+        <snippet>Motion-sensing brain-training keyboard selected for Taiwan regional competition.</snippet>
+        <tags>micro:bit,motion sensing,international</tags>
+      </en>
+    </preview>
+    <preview key="projectWeather">
+      <zh>
+        <desc>開源 Android 天氣 App，靈感來自 Google Pixel Weather，支援多種天氣來源與小工具。我負責繁體中文化，翻譯了 1,338 條字串，約佔專案翻譯量的 20% 以上。</desc>
+        <tags>open source,android,i18n,繁體中文</tags>
+      </zh>
+      <en>
+        <desc>Open-source Android weather app inspired by Google Pixel Weather, supporting multiple weather sources and widgets. I localized it into Traditional Chinese—1,338 strings, over 20% of the project's translation volume.</desc>
+        <tags>open source,android,i18n,traditional chinese</tags>
+      </en>
+    </preview>
+    <preview key="projectCrop">
+      <zh>
+        <desc>農產分析是一款專為農民和農業從業者設計的智慧工具，幫助您輕鬆掌握市場動態，做出明智的農業決策。透過即時的價格數據和智能分析，讓您的農產品獲得最佳收益。</desc>
+        <tags>android,農業,價格分析,開放資料</tags>
+      </zh>
+      <en>
+        <desc>A smart tool for farmers and agricultural professionals to track market trends and make informed decisions. Real-time price data and intelligent analysis help maximize crop revenue.</desc>
+        <tags>android,agriculture,price analysis,open data</tags>
+      </en>
+    </preview>
+    <preview key="linkGithub">
+      <zh>
+        <title>Yo-codeback</title>
+        <desc>GitHub 個人頁面，看看我的專案、程式碼和開源貢獻。</desc>
+      </zh>
+      <en>
+        <title>Yo-codeback</title>
+        <desc>My GitHub profile—projects, code, and open-source contributions.</desc>
+      </en>
+    </preview>
+    <preview key="linkStatus">
+      <zh>
+        <title>服務狀態</title>
+        <desc>即時查看我的網頁服務運作狀態。</desc>
+      </zh>
+      <en>
+        <title>Service Status</title>
+        <desc>Real-time status of my web services.</desc>
+      </en>
+    </preview>
+    <preview key="linkEmailContact">
+      <zh>
+        <title>contact@lxyo.cc.cd</title>
+        <desc>聯絡信箱。</desc>
+      </zh>
+      <en>
+        <title>contact@lxyo.cc.cd</title>
+        <desc>Contact email.</desc>
+      </en>
+    </preview>
+    <preview key="linkEmailMe">
+      <zh>
+        <title>me@lxyo.cc.cd</title>
+        <desc>聯絡信箱。</desc>
+      </zh>
+      <en>
+        <title>me@lxyo.cc.cd</title>
+        <desc>Contact email.</desc>
+      </en>
+    </preview>
+  </previews>
+</i18n>
