@@ -197,6 +197,11 @@ main{padding-left:var(--rail-w)}
 .grid{display:grid;gap:26px}
 .grid--3{grid-template-columns:repeat(3,minmax(0,1fr))}
 .grid--2{grid-template-columns:repeat(2,minmax(0,1fr))}
+.grid--awards{grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
+.cover--pvqc{background:radial-gradient(circle at 30% 20%,rgba(var(--accent-rgb),.28),transparent 50%),linear-gradient(155deg,#1a2438,#0d121c)}
+.cover-mark{display:flex;flex-direction:column;align-items:center;gap:8px;color:#fff;text-align:center}
+.cover-mark b{font:900 clamp(36px,4vw,48px)/1 var(--serif);letter-spacing:.06em}
+.cover-mark small{font:500 11px/1 var(--mono);letter-spacing:.28em;text-transform:uppercase;color:rgba(255,255,255,.7)}
 .card{position:relative;display:flex;flex-direction:column;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:visible;transition:transform .5s var(--ease),box-shadow .5s var(--ease)}
 .card:hover{transform:translateY(-6px);box-shadow:0 30px 50px -30px var(--shadow)}
 .cover{position:relative;display:grid;place-items:center;aspect-ratio:16/10;border-bottom:1px solid var(--line);border-radius:12px 12px 0 0;overflow:hidden;background:#fff}
@@ -280,9 +285,9 @@ main{padding-left:var(--rail-w)}
    13. 手機 / 平板
    ================================================================ */
 @media (max-width:1000px){
-  .grid--3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .grid--3,.grid--awards{grid-template-columns:repeat(2,minmax(0,1fr))}
   .hero{grid-template-columns:1fr}
-  }
+}
 @media (max-width:820px){
   html{scroll-snap-type:none}
   .rail{display:none}
@@ -296,7 +301,7 @@ main{padding-left:var(--rail-w)}
   .name{font-size:34vw}
   .facts{width:100%}
   .facts div{flex:1;min-width:0;padding:10px 12px}
-    .about,.grid--2,.grid--3{grid-template-columns:minmax(0,1fr)}
+  .about,.grid--2,.grid--3,.grid--awards{grid-template-columns:minmax(0,1fr)}
   .field{grid-template-columns:30px 80px minmax(0,1fr);gap:10px}
   .taiwan-map-inner{min-height:420px}
   .tt-row{grid-template-columns:22px minmax(0,1fr);gap:0 14px}

@@ -310,6 +310,26 @@
         <tags>translate,localization,traditional chinese</tags>
       </en>
     </preview>
+    <preview key="awardPvqc">
+      <zh>
+        <title>PVQC AI Literacy Specialist</title>
+        <org>PVQC</org>
+        <desc>已通過 PVQC AI Literacy Specialist（專業級）考試。涵蓋人工智慧相關專業英文詞彙能力；正式證書核發中，尚未可查詢。</desc>
+        <date>2026 年 10 月</date>
+        <badge>已通過</badge>
+        <snippet>已通過 AI 專業英文詞彙能力專業級考試。</snippet>
+        <tags>AI,PVQC,專業英文,專業級</tags>
+      </zh>
+      <en>
+        <title>PVQC AI Literacy Specialist</title>
+        <org>PVQC</org>
+        <desc>Passed the PVQC AI Literacy Specialist (Professional level) exam, covering AI-related professional English vocabulary. The official certificate is still being issued and is not yet searchable.</desc>
+        <date>October 2026</date>
+        <badge>Passed</badge>
+        <snippet>Passed the AI professional English vocabulary Specialist exam.</snippet>
+        <tags>AI,PVQC,professional English,Specialist</tags>
+      </en>
+    </preview>
     <preview key="award1">
       <zh>
         <title>智在家鄉 2024 第七屆</title>

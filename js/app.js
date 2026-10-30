@@ -137,6 +137,7 @@
   let lastCard = null;
   const coverHTML = (d) => {
     const cls = d.cover ? ` cover--${d.cover}` : '';
+    if (d.cover === 'pvqc') return `<div class="cover${cls}"><span class="cover-mark"><b>PVQC</b><small>AI Literacy</small></span></div>`;
     return d.logo ? `<div class="cover${cls}"><img src="${esc(d.logo)}" alt="" referrerpolicy="no-referrer"${/nantou|w480|weather_master/.test(d.logo) ? ' class="square"' : ''}></div>` : '';
   };
   function openDrawer(card) {
