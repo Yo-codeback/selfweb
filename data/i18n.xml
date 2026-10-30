@@ -49,6 +49,10 @@
       <zh>獲獎</zh>
       <en>Awards</en>
     </string>
+    <string key="nav.certs">
+      <zh>證照</zh>
+      <en>Certificates</en>
+    </string>
     <string key="nav.projects">
       <zh>專案</zh>
       <en>Projects</en>
@@ -310,7 +314,7 @@
         <tags>translate,localization,traditional chinese</tags>
       </en>
     </preview>
-    <preview key="awardPvqc">
+    <preview key="certPvqc">
       <zh>
         <title>PVQC AI Literacy Specialist</title>
         <org>PVQC</org>

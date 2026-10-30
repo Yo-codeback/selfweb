@@ -143,8 +143,10 @@
   function openDrawer(card) {
     lastCard = card;
     const d = card.dataset;
-    const isAward = card.classList.contains('award-card');
-    $('#drawerKind').textContent = isAward ? t('nav.awards', 'Awards') : t('nav.projects', 'Projects');
+    const kind = card.classList.contains('cert-card') ? t('nav.certs', 'Certs')
+      : card.classList.contains('award-card') ? t('nav.awards', 'Awards')
+      : t('nav.projects', 'Projects');
+    $('#drawerKind').textContent = kind;
     const rows = [];
     if (d.date) rows.push(`<dt>${esc(t('ui.date', 'Date'))}</dt><dd>${esc(d.date)}</dd>`);
     if (d.tags) rows.push(`<dt>${esc(t('ui.tags', 'Tags'))}</dt><dd><span class="tags">${d.tags.split(',').map((x) => `<span class="tag">${esc(x.trim())}</span>`).join('')}</span></dd>`);

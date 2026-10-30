@@ -86,19 +86,19 @@
       if (data.date) el.dataset.date = data.date;
       if (data.badge) el.dataset.badge = data.badge;
 
-      const snippet = el.querySelector('.award-card-snippet, .project-card-snippet');
+      const snippet = el.querySelector('.award-card-snippet, .cert-card-snippet, .project-card-snippet');
       if (snippet && data.snippet) snippet.textContent = data.snippet;
 
-      const title = el.querySelector('.award-card-title, .project-card-title');
-      if (title && data.title && el.classList.contains('award-card')) title.textContent = data.title;
+      const title = el.querySelector('.award-card-title, .cert-card-title, .project-card-title');
+      if (title && data.title && (el.classList.contains('award-card') || el.classList.contains('cert-card'))) title.textContent = data.title;
 
-      const org = el.querySelector('.award-card-org');
+      const org = el.querySelector('.award-card-org, .cert-card-org');
       if (org && data.org) org.textContent = data.org;
 
-      const date = el.querySelector('.award-card-date');
+      const date = el.querySelector('.award-card-date, .cert-card-date');
       if (date && data.date) date.textContent = data.date;
 
-      const badge = el.querySelector('.award-card-badge');
+      const badge = el.querySelector('.award-card-badge, .cert-card-badge');
       if (badge && data.badge) badge.textContent = data.badge;
     });
 
